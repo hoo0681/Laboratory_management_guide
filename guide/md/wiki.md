@@ -59,8 +59,9 @@ https://github.com/cheese10yun/github-project-management
 
   ## github 사용지침
    ### branch 정책
+   branch naming
+
     master에 변경사항을 반영하기 위해서는 반드시 pull request를 해야한다.
-    따라서 
    ### commit 규칙
     english  
     1. Separate subject from body with a blank line
@@ -81,7 +82,7 @@ reference: https://chris.beams.io/posts/git-commit/
     BREAKING CHANGE: 'extend' > 'inherit', must fix all the codes
     doc: add document about something
     testset: add test set for that branch 
-
+    gittest: test git commend
     # Examples with optional scope
 
     fix(chat): broken emoji
