@@ -48,14 +48,14 @@ https://github.com/cheese10yun/github-project-management
 *** 
 
    ### epic 
-   story로 분할이 가능한 최종사용자의 요구사항이다.
+   요구사항들로 분할이 가능한 작은 목표이다.
 ***
    ### story 
-
+   가장작은 단위의 요구사항
   ## zenhub 사용법
 
   ## github 사용법
-  
+
 
   ## github 사용지침
    ### branch 정책
