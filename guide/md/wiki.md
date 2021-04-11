@@ -52,19 +52,25 @@ https://github.com/cheese10yun/github-project-management
 ***
    ### story 
    가장작은 단위의 요구사항
+***
+
   ## zenhub 사용법
 
   ## github 사용법
 
 
   ## github 사용지침
+  0. base design
+  1. prototyping (kickoff)
+  2. development 
+
    ### branch 정책
    **master에 변경사항을 반영하기 위해서는 반드시 pull request를 해야한다.**
 
-    branch는 main과 stable이 항상 존재
+    새로운 branch는 issue를 해결하기 위해 생성하고 main에 병합하고 삭제 항상 존재
 
     branch naming:
-    branch의 이름은 <작성자>-<이슈label>-이슈번호-number 로한다.
+    branch의 이름은 <작성자>-<이슈label>-이슈번호 로한다.
    ### commit 규칙
     english  
     1. Separate subject from body with a blank line
@@ -86,20 +92,44 @@ reference: https://chris.beams.io/posts/git-commit/
     doc: add document about something
     testset: add test set for that branch 
     gittest: test git commend
+
     # Examples with optional scope
 
     fix(chat): broken emoji
     feat(auth): add Google Play Auth
 
 reference: https://blog.cookapps.io/guide/conventional-commits/#%EC%82%AC%EC%9A%A9%EB%B2%95
-   ### 이슈 타입
-   * epic
-   * bug
-   * hotfix
-   * story
-   * setup 
-   * kickoff
-   * document 
-   ### 이슈 레벨
+   ### 이슈 라벨
+   이슈는 매우 넓은 개념으로 의미를 한정하기위해 라벨을 지정한다.
+   * epic : epic 이슈로 스플린트에 넣으면 안된다.
+   * bug : 버그 이슈
+   * story : epic에서 분할된 가장작은 요구사항(기능)이다.
+   * setup : kickoff를 위한 준비(설계나 서버셋업 등을 요청하는 이슈다)
+   * kickoff : prototype을 요청하는 이슈로 베이스가 되는 실행가능한 프로그램을 요구한다. 
+   * document : 문서를 요구하는 이슈다.
    ### Pull Request(PR)운영
+    *어떻게 사용하던 PR시 code review를 통해 원격 저장소를 유지한다.
+    *fork는 막혀있으므로 branch만 사용한다.
+    *branch는 기본적으로 issue를 close하기 위해 사용한다.
+    *진행상황을 확인하고 어디서든지 계속작업할수 있도록 원격저장소의 브렌치에 계속 동기화한다.
+
+    #branch생성
+    git checkout -b <작성자>-<이슈label>-이슈번호
+    
+    #branch확인
+    git branch
+    
+    #원격저장소에 branch 만들기
+    git push origin <작성자>-<이슈label>-이슈번호
+    
+    #####
+    수정작업
+    #####
+    
+
+    git commit -m "커밋 메시지"
+    git push origin <작성자>-<이슈label>-이슈번호
+    
+    #PR
+    github 저장소로 들어와 pull request를 한다.
    ### CI 
