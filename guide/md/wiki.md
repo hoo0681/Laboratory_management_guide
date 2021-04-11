@@ -72,28 +72,18 @@ https://github.com/cheese10yun/github-project-management
     branch naming:
     branch의 이름은 <작성자>-<이슈label>-이슈번호 로한다.
    ### commit 규칙
-    english  
-    1. Separate subject from body with a blank line
-    2. Limit the subject line to 50 characters
-    3. Capitalize the subject line
-    4. Do not end the subject line with a period
-    5. Use the imperative mood in the subject line
-    6. Wrap the body at 72 characters
-    7. Use the body to explain what and why vs. how
-reference: https://chris.beams.io/posts/git-commit/
 
     <type>[optional scope]: <description>
 
     # Examples
-
     fix: allow login without uid
     feat: add chat function
     BREAKING CHANGE: 'extend' > 'inherit', must fix all the codes
     doc: add document about something
     testset: add test set for that branch 
     gittest: test git commend
-    # Examples with optional scope
 
+    # Examples with optional scope
     fix(chat): broken emoji
     feat(auth): add Google Play Auth
 
