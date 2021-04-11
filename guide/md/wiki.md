@@ -72,20 +72,10 @@ https://github.com/cheese10yun/github-project-management
     branch naming:
     branch의 이름은 <작성자>-<이슈label>-이슈번호 로한다.
    ### commit 규칙
-    english  
-    1. Separate subject from body with a blank line
-    2. Limit the subject line to 50 characters
-    3. Capitalize the subject line
-    4. Do not end the subject line with a period
-    5. Use the imperative mood in the subject line
-    6. Wrap the body at 72 characters
-    7. Use the body to explain what and why vs. how
-reference: https://chris.beams.io/posts/git-commit/
 
     <type>[optional scope]: <description>
 
     # Examples
-
     fix: allow login without uid
     feat: add chat function
     BREAKING CHANGE: 'extend' > 'inherit', must fix all the codes
@@ -94,7 +84,6 @@ reference: https://chris.beams.io/posts/git-commit/
     gittest: test git commend
 
     # Examples with optional scope
-
     fix(chat): broken emoji
     feat(auth): add Google Play Auth
 
@@ -108,28 +97,13 @@ reference: https://blog.cookapps.io/guide/conventional-commits/#%EC%82%AC%EC%9A%
    * kickoff : prototype을 요청하는 이슈로 베이스가 되는 실행가능한 프로그램을 요구한다. 
    * document : 문서를 요구하는 이슈다.
    ### Pull Request(PR)운영
-    *어떻게 사용하던 PR시 code review를 통해 원격 저장소를 유지한다.
     *fork는 막혀있으므로 branch만 사용한다.
-    *branch는 기본적으로 issue를 close하기 위해 사용한다.
-    *진행상황을 확인하고 어디서든지 계속작업할수 있도록 원격저장소의 브렌치에 계속 동기화한다.
-
     #branch생성
     git checkout -b <작성자>-<이슈label>-이슈번호
-    
     #branch확인
     git branch
-    
-    #원격저장소에 branch 만들기
-    git push origin <작성자>-<이슈label>-이슈번호
-    
     #####
     수정작업
     #####
-    
-
-    git commit -m "커밋 메시지"
-    git push origin <작성자>-<이슈label>-이슈번호
-    
-    #PR
-    github 저장소로 들어와 pull request를 한다.
+    충돌을 유도합니다.
    ### CI 
