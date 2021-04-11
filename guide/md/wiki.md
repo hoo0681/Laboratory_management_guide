@@ -115,5 +115,5 @@ reference: https://blog.cookapps.io/guide/conventional-commits/#%EC%82%AC%EC%9A%
     #####
     수정작업
     #####
-    
+    충돌을 유도합니다.
    ### CI 
