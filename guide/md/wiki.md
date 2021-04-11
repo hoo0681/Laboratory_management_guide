@@ -55,15 +55,17 @@ https://github.com/cheese10yun/github-project-management
 ***
 
   ## zenhub 사용법
-
+***
   ## github 사용법
 
-
+***
   ## github 사용지침
-  0. base design
-  1. prototyping (kickoff)
-  2. development 
+    기본흐름
 
+    0. base design
+    1. prototyping (kickoff)
+    2. development loop start
+***
    ### branch 정책
    **master에 변경사항을 반영하기 위해서는 반드시 pull request를 해야한다.**
 
@@ -71,23 +73,25 @@ https://github.com/cheese10yun/github-project-management
 
     branch naming:
     branch의 이름은 <작성자>-<이슈label>-이슈번호 로한다.
+***
    ### commit 규칙
 
     <type>[optional scope]: <description>
 
     # Examples
     fix: allow login without uid
-    feat: add chat function
     BREAKING CHANGE: 'extend' > 'inherit', must fix all the codes
-    doc: add document about something
-    testset: add test set for that branch 
-    gittest: test git commend
+    add: add something about something
+    update:
 
     # Examples with optional scope
+    add(undo): add undo feature
     fix(chat): broken emoji
-    feat(auth): add Google Play Auth
+    add(auth): add Google Play Auth
+    add(testset): add test set for that branch 
 
 reference: https://blog.cookapps.io/guide/conventional-commits/#%EC%82%AC%EC%9A%A9%EB%B2%95
+***
    ### 이슈 라벨
    이슈는 매우 넓은 개념으로 의미를 한정하기위해 라벨을 지정한다.
    * epic : epic 이슈로 스플린트에 넣으면 안된다.
@@ -96,7 +100,13 @@ reference: https://blog.cookapps.io/guide/conventional-commits/#%EC%82%AC%EC%9A%
    * setup : kickoff를 위한 준비(설계나 서버셋업 등을 요청하는 이슈다)
    * kickoff : prototype을 요청하는 이슈로 베이스가 되는 실행가능한 프로그램을 요구한다. 
    * document : 문서를 요구하는 이슈다.
+***
    ### Pull Request(PR)운영
+    PR naming
+    " [Issue type] Merge "branch name" <- 설명 "
+
+///
+
     *어떻게 사용하던 PR시 code review를 통해 원격 저장소를 유지한다.
     *fork는 막혀있으므로 branch만 사용한다.
     *branch는 기본적으로 issue를 close하기 위해 사용한다.
@@ -114,14 +124,13 @@ reference: https://blog.cookapps.io/guide/conventional-commits/#%EC%82%AC%EC%9A%
     #####
     수정작업
     #####
-    
 
     git commit -m "커밋 메시지"
     git push origin <작성자>-<이슈label>-이슈번호
     
     #PR
     github 저장소로 들어와 pull request를 한다.
+***
    ### CI 
-   main
-   edit1
-   edit2
+   
+    추가예정
